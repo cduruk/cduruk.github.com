@@ -6,8 +6,11 @@
   </title>
   <link rel="stylesheet"
         media="screen, projection" href="/static/screen.css" type="text/css">
+  <link rel="stylesheet"
+        media="screen, projection" href="/static/fonts/stylesheet.css"
+        type="text/css">
 </head>
-<body>
+<body {% if page.baseclass %}class="{{page.baseclass}}"{% endif %}>
   <div class="top-border"></div>
   <div class="content">
     {{content}}

@@ -1,3 +1,4 @@
+/* Site Design */
 * {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
@@ -8,31 +9,114 @@ body {
 	margin: 0; 
 	padding: 0;
   background: #f7f7f7;
+  font-family: ;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 p {
   color: #444;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: Georgia, serif;
   text-rendering: optimizelegibility;
+}
+
+a {
+  color: #09f;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 2px solid #09f;
+}
+
+h1, h2, h3 {
+  font-family: 'TitilliumText22LBold';
+  font-weight:normal;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #09f;
+  font-family: 'TitilliumText22LLight';
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px 0;
+}
+
+h3 {
+  font-size: 22px;
+  margin-bottom: 10px 0;
+}
+
+.content {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.nav {
+  font-family: 'TitilliumText22LLight';
+  margin-top: 10px;
+  float: right;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.nav li:last-child {
+  margin-right: 0;
 }
 
 .top-border {
   height: 3px;
-  background: #ddd;
+  background: #09f;
 }
 
-.content  {
+.box {
   padding: 20px;
   background: #fff;
   border-radius: 3px;
-  margin: 200px auto 0 auto;
-  width: 700px;
   box-shadow: 1px 1px 1px #ddd;
 }
 
-.content p:first-child {
+/* Home Page */
+.home .box p:first-child {
   margin-bottom: 12px;
+}
+
+.home .content {
+  margin-top: 200px;
+}
+
+.home .box p:last-child {
+  margin-bottom: 0;
+}
+
+/* Post Page */
+.post .content {
+  margin-top: 80px;
+}
+
+.post .box {
+  margin-bottom: 50px;
+}
+
+.post .box p:last-child {
+  margin-bottom: 0;
 }
