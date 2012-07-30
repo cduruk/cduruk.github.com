@@ -53,12 +53,12 @@ h1 {
 
 h2 {
   font-size: 24px;
-  margin-bottom: 10px 0;
+  margin-bottom: 5px;
 }
 
 h3 {
   font-size: 22px;
-  margin-bottom: 10px 0;
+  margin-bottom: 10px;
 }
 
 .content {
@@ -76,7 +76,7 @@ h3 {
 
 .nav li {
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .nav li:last-child {
@@ -95,9 +95,8 @@ h3 {
   box-shadow: 1px 1px 1px #ddd;
 }
 
-/* Home Page */
-.home .box p:first-child {
-  margin-bottom: 12px;
+.box p:last-child {
+  margin-bottom: 0;
 }
 
 .home .content {
@@ -117,6 +116,8 @@ h3 {
   margin-bottom: 50px;
 }
 
-.post .box p:last-child {
-  margin-bottom: 0;
+
+/* About Page */
+.about .content {
+  margin-top: 80px;
 }
