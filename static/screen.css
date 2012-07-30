@@ -101,19 +101,19 @@ ul li:last-child {
   margin: 0 auto;
 }
 
-.nav {
+nav {
   font-family: 'TitilliumText22LLight';
   margin-top: 10px;
   float: right;
   text-transform: uppercase;
 }
 
-.nav li {
+nav li {
   display: inline-block;
   margin-right: 20px;
 }
 
-.nav li:last-child {
+nav li:last-child {
   margin-right: 0;
 }
 
@@ -124,7 +124,7 @@ ul li:last-child {
 
 .box {
   padding: 20px;
-  background: #fff;
+  background: #fdfdfd;
   border-radius: 3px;
   box-shadow: 1px 1px 1px #ddd;
 }
@@ -147,12 +147,21 @@ ul li:last-child {
   margin-bottom: 50px;
 }
 
+.post time {
+  display: block;
+  font-family: 'TitilliumText22LThin', sans-serif;
+  color: #777;
+  text-align: right;
+  font-style: italic;
+}
+
+.post time span {
+  border-bottom: 1px solid #ddd;
+}
+
 /* Posts Page */
 .posts .content {
   margin-top: 80px;
-}
-
-.posts ul li {
 }
 
 .posts ul li:last-child {

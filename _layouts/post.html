@@ -6,6 +6,11 @@ baseclass: post
   <a href="{{post.url}}">{{page.title}}</a>
 </h1>
 
-<div class="box">
+<article class="box">
   {{content}}
-</div>
+  <time datetime="{{ page.date | date: "%Y-%m-%d" }}">
+    <span>
+      {{ page.date | date: "%b %d, %Y" }}
+    </span>
+  </time>
+</article>
