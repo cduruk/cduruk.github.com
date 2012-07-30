@@ -10,6 +10,23 @@
         media="screen, projection" href="/static/fonts/stylesheet.css"
         type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-33748610-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var protocol = document.location.protocol;
+      var _src = '.google-analytics.com/ga.js';
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == protocol ? 'https://ssl' : 'http://www') + _src;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
 </head>
 <body {% if page.baseclass %}class="{{page.baseclass}}"{% endif %}>
   <div class="top-border"></div>
