@@ -1,16 +1,16 @@
 Sharing is right there in Snapguide's tagline; "Share what you love doing". 
 Therefore, there are a lot of ways for someone to share something on Snapguide.
-We knew the only we could make our sharing experience better is if we measured
+We knew the only way we could make our sharing experience better is if we measured
 and tracked how people shared content on Snapguide.
 
 Moreover, we also wanted to make sure we could carefully account for all the
 traffic our website was getting through non-browser clients that do not
 properly have referer information, collectively known as Twitter clients.
 
-Significant chunk of the Snapguide URLs we release into the wild are from our
+A significant chunk of the Snapguide URLs we release into the wild are from our
 own short domain: `http://snp.gd`. Whenever a guide is published, we
 automatically create a short hash that maps to a certain guide. However, instead
-of just appending that hash to our short URL, we prepend that hash with a 
+of just appending that hash to our short URL, we prepend that hash with an 
 alphanumeric character of our choosing. So the URL we generate becomes
 `http://snp.gd/xfoobar` instead of just `http://snp.gd/foobar`. We use that
 extra character to encode the data we need to track the share.
@@ -20,7 +20,18 @@ if any magic involved.
 
 When a request like `http://snp.gd/xfoobar` comes into our servers; the first
 thing our nginx proxies do is rewrite it to be of the form 
-`http://snp.gd/short/xfoobar` and then pass it on to our Pyramid application. 
+`http://snp.gd/short/xfoobar` and then pass it on to our Pyramid application:
+
+    server {
+        listen 80;
+        server_name snp.gd;
+        rewrite  ^(.*)$  /short$1;
+        location / {
+            include uwsgi_params;
+            uwsgi_pass unix:///tmp/sg.uwsgi.sock;
+        }
+    }
+
 We add the `/short` as a path so that our Pyramid app can match that URL
 unambigiously via the following route: 
 
@@ -77,5 +88,5 @@ the canonical version of the URL in our head.
 
 Encoding some metadata in a short URL is hardly a unique idea and our
 implementation is yet far from perfect. However, in its current state it allowed
-us to quickly get a good a insight as to how and when our guides are being
+us to quickly get a good insight as to how and when our guides are being
 shared using the tools we have already been using.
