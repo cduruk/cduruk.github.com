@@ -1,8 +1,11 @@
-We wanted to be able to track how people share guides on social networks such as
-Twitter, Facebook, and Pinterest as  well as via email. We not only wanted to 
-track the social network the guide was  shared on, we also wanted to know where
-the share has originated; be it our iPhone app, our website, or through one of
-our Twitter accounts that tweet about new guides.
+Sharing is right there in Snapguide's tagline; "Share what you love doing". 
+Therefore, there are a lot of ways for someone to share something on Snapguide.
+We knew the only we could make our sharing experience better is if we measured
+and tracked how people shared content on Snapguide.
+
+Moreover, we also wanted to make sure we could carefully account for all the
+traffic our website was getting through non-browser clients that do not
+properly have referer information, collectively known as Twitter clients.
 
 Significant chunk of the Snapguide URLs we release into the wild are from our
 own short domain: `http://snp.gd`. Whenever a guide is published, we
@@ -12,18 +15,19 @@ alphanumeric character of our choosing. So the URL we generate becomes
 `http://snp.gd/xfoobar` instead of just `http://snp.gd/foobar`. We use that
 extra character to encode the data we need to track the share.
 
-There are of course couple layers that interact here but there's very little
-magic; just using the tools and standards the way they were intended to be used.
+There are of course couple layers that work in unison but there is very little
+if any magic involved.
 
-When a `http://snp.gd/xfoobar` request comes into our servers; our nginx proxies
-rewrite the URL to be `http://snp.gd/short/foobar` and forward it to
-our Pyramid application; which has the following route configuration:
-  
-    # Pyramid configuration.
+When a request like `http://snp.gd/xfoobar` comes into our servers; the first
+thing our nginx proxies do is rewrite it to be of the form 
+`http://snp.gd/short/xfoobar` and then pass it on to our Pyramid application. 
+We add the `/short` as a path so that our Pyramid app can match that URL
+unambigiously via the following route: 
+
     conf.add_route('guide.short', '/short/{key}')
 
-In our view callable (which are known as actions in the Rails world), we parse
-out the `key`; the first character is the share tracking code while the rest is
+In our view callable (Pyramid equivalent of Rails actions), we parse
+this `key`; the first character is the share tracking code while the rest is
 the hash that maps to a certain guide.
 
     @view.view_config(route_name='guide.short')
