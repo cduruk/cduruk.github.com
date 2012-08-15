@@ -38,13 +38,13 @@ console on the Digg homepage.
     > myList
       myList
       [
-      <div class=​"story-item">​…​</div>​
+      <div class="story-item">...</div>
       ,
-      <div class=​"story-item">​…​</div>​
+      <div class="story-item">...</div>
       ,
       [...]
       ,
-      <div class=​"story-item">​…​</div>​
+      <div class="story-item">..</div>
       ,
       ]
 {% endhighlight %}
@@ -148,7 +148,7 @@ some other crazy creation.
 
 {% highlight javascript %}
     > myArray.pop();
-      <div class=​"story-item">​…​</div>​
+      <div class="story-item">...</div>
 {% endhighlight %}
 
 Not bad. We are definitely sure that we are dealing with an array
@@ -193,7 +193,7 @@ element with the id `length` itself. Nevertheless, this is easy to fix.
     > var myList = document.querySelectorAll('.story-item');
       undefined
     > while (node = myList[++i]) { myIEArray[i] = node; }
-      <div class=​"story-item">​…​</div>​
+      <div class="story-item">...</div>
 {% endhighlight %}
 
 This code involves a bit more trickery. In essence, we are again looping over
