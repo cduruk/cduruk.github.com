@@ -116,6 +116,7 @@ ul li:last-child {
   max-width: 700px;
   margin: 0 auto;
   padding: 0 10px;
+  margin-top: 80px;
 }
 
 nav {
@@ -150,10 +151,6 @@ nav li:last-child {
   margin-bottom: 0;
 }
 
-.home .content {
-  margin-top: 200px;
-}
-
 .home .box p:last-child {
   margin-bottom: 0;
 }
@@ -176,16 +173,6 @@ nav li:last-child {
   border-bottom: 1px solid #ddd;
 }
 
-/* Posts Page */
-.posts .content {
-  margin-top: 80px;
-}
-
 .posts ul li:last-child {
   margin-bottom: 0;
-}
-
-/* About Page */
-.about .content {
-  margin-top: 80px;
 }
