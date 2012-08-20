@@ -176,3 +176,10 @@ nav li:last-child {
 .posts ul li:last-child {
   margin-bottom: 0;
 }
+
+.post .outro {
+	padding: 10px 0;
+	border-top: 1px dotted #09f;
+	border-bottom: 1px dotted #09f;
+	margin-bottom: 15px;
+}
