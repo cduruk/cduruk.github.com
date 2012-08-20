@@ -178,8 +178,9 @@ nav li:last-child {
 }
 
 .post .outro {
-	padding: 10px 0;
-	border-top: 1px dotted #09f;
-	border-bottom: 1px dotted #09f;
+	padding: 10px;
+	border: 1px solid #09f;
+	border-radius: 3px;
+	background: #e4f4ff;
 	margin-bottom: 15px;
 }
