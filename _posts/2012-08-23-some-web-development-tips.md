@@ -66,13 +66,13 @@ I am hoping to keep this list as _my_ canonical list of web development tips and
 
 &middot; In general, aim for the least amount of JS possible. This is mostly because testing JS programmatically is hard, especially in a browser environment. Selenium is a great tool in theory but your tests will rot and become useless the second you stop maintaing them, which is earlier than you think.
 
-&middot; Sending JSON encoded HTML is easier and most of the time, fast enough. This both allows you to have less JavaScript since you don't have to bother rendering things on the client but just insert some DOMified strings into the page but also makes it easier to maintain a single set of tempaltes.
+&middot; Sending JSON encoded HTML is easier and most of the time, fast enough. This both allows you to have less JavaScript since you don't have to bother rendering things on the client but just insert some DOMified strings into the page but also makes it easier to maintain a single set of templates.
 
 &middot; Always return some formatted JSON from your endpoints. In general, you'll always want two parameters to be present; something that represents if the request was succesful and a payload, like your JSON-encoded HTML. Tie that success parameter to your notification system so that if a failed request isn't handled by your code, your notification system picks it up.
 
 &middot; `==` is bad. Don't ever use it. On everything else about the language, you'll run into differing opinions.
 
-&middot; Dealing with DOM is expensive. If you have to, use `data-x`.
+&middot; Dealing with DOM is expensive. If you have to, use `data-x` attributes. For anything that is not DOM related, like the user name of the logged in user, keep them in JavaScript, under your own namespace.
 
 &middot; External scripts, like those used to serve ads, will sometimes include some `document.write`s in them which might cause horrible issues like your page just going white. One way to fix it is to replace the `document.write` method in your base JavaScript. You probably should never use it anyway.
 
