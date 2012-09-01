@@ -1,16 +1,32 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en-us">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>
     {% if page.title %}{{page.title}} &middot; {% endif %}Can Duruk
   </title>
+
+  <meta charset="utf-8" />
+  <meta name="author" content="Can Duruk" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  {% if page.title %}
+  <meta property="og:title" content="{{ page.title }}">
+    {% if page.description %}
+      <meta name="description" content="{{ page.description }}">
+    {% endif %}
+  {% else %}
+    <meta name="description" content="Posts by Can Duruk">
+  {% endif %}
+
   <link rel="stylesheet"
-      media="screen, projection" href="/static/fonts/stylesheet.css"
-      type="text/css">
+      	media="screen, projection" href="/static/fonts/stylesheet.css"
+      	type="text/css">
   <link rel="stylesheet"
         media="screen, projection" href="/static/screen.css" type="text/css">
   <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" type="application/atom+xml"
+        title="Can Duruk" href="http://duruk.net/atom.xml">
+
   <script type="text/javascript">
 
     var _gaq = _gaq || [];
