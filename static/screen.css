@@ -20,7 +20,7 @@ p {
   font-size: 18px;
   line-height: 29px;
   font-family: 'Palatino Linotype', Palatino, Georgia, serif;
-  text-rendering: optimizelegibility;
+  text-rendering: optimizeLegibility;
 }
 
 code, pre {
