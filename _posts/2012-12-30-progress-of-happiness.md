@@ -92,10 +92,12 @@ I am not an American but I know enough American history to know that "pursuit of
 
 While that phrase itself sounds "deep" and thoughtful enough to be universally true, it's also worth noting on as a side note that the "pursuit of happiness" is replaced with "property" in the U.S. Constitution and "security of person" in the Universal Declaration of Human Rights.
 
-But going back to pursuit of happiness; while the scientific literature about happiness is full of examples of what *can* actually make us happy, we seem to be willfully ignorant of even the smallest things that can bring incredible joy; things like setting a high goal and doing whatever it takes to achieve it.
+But going back to pursuit of happiness; while the scientific literature about happiness is full of examples of what *can* actually make us happy, we seem to be willfully ignorant of even the smallest things that can bring us incredible joy; things like setting a high goal and doing whatever it takes to achieve it.
 
-As I mentioned; that time I made it up the hill was such a happy, joyous moment for me that I immediately list that as one of my "happiest moments in my life" whenever somebody asks that question.
+As I mentioned; that time I made it up the hill was such a happy, joyous moment for me that I immediately list that as one of my "happiest moments in my life" whenever somebody asks that question. And while enumarating life experiences and talking in superlatives is vain and juvenile but there aren't many times in my life where I felt as much accomplished, and proud, yet peaceful in my life.
 
-And interestingly enough, the other time I can immediately recall being that happy, so happy that I was speechless and tearful, again includes a similar breathtaking view of gorgeous city but in the company of a woman I held very, very close to my heart.
+Of course, there are many, many other ways to be happy.
+
+Interestingly enough, the other time I can immediately recall being that happy, so happy that I was speechless and tearful, again includes a similar breathtaking view of a gorgeous city but in the company of a woman I held very close to my heart.
 
 Here is to all of you finding your happiness in 2013.
