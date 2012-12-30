@@ -12,7 +12,7 @@ While I am not sure what exactly was the trigger that made me realize I let thin
 
 See, I think during all that time when I was *fat*, I think I successfully avoided my picture taken. Not so much consciously, but more with the knowledge that it would come out not particularly flattering.
 
-So when that photograph was published and I sent it to one of my friends, I found myself prefacing her exposure with "oh my god, those are worst muffin tops ever". I hope to never string together more offensive, childish yet true set of words together about myself.
+So when that photograph was published and I sent it to one of my friends, I found myself prefacing her exposure with "oh my god, those are most horrendous looking muffin tops ever". I hope to never string together more offensive, childish yet true set of words together about myself.
 
 I thought, or rather believed, that I could make some basic adjustments to my diet and see what happens. Particularly because it was a big part of the culture at the boarding school I went to, I had a big affinity for pizza and probably ordered one or two or more every week. I decided that if I could just stop ordering pizza and go out and eat something else, that would be hopefully make a difference. In fact, I even started a wager with my one of my co-workers; if I could not go without eating pizza for several months, until some deadline, he'd have to buy me a really good one at a fancy place. We both knew the irony but it was all in good will.
 
@@ -78,7 +78,7 @@ It just wouldn't end. I thought about giving up; I did. But not only I was too v
 
 And then I made it all the way up, saw the amazing view of San Francisco from all the way up and I cried.
 
-And it wasn't the exasperation, or that the view was so beautiful that I couldn't hold my emotions in -I do have a thing for breathtaking views- or maybe something else altogether different. It was that at point in my life, I felt the happiest I have ever been in a long time. It didn't matter that I almost blew out my knee or that I was so spent that my mouth tasted funny, seeing that view as a reward of my hard work made me feel happier than I have ever been, in a very long time.
+And it wasn't the exasperation, or that the view was so beautiful that I couldn't hold my emotions in -I do have a soft-spot for breathtaking views- or maybe something else altogether different. It was that at point in my life, I felt the happiest I have ever been in a long time. It didn't matter that I almost blew out my knee or that I was so spent that my mouth tasted funny, seeing that view as a reward of my hard work made me feel happier than I have ever been, in a very long time.
 
 So here I am today, a mere 2 days before 2013.
 
@@ -98,6 +98,6 @@ As I mentioned; that time I made it up the hill was such a happy, joyous moment 
 
 Of course, there are many, many other ways to be happy.
 
-Interestingly enough, the other time I can immediately recall being that happy, so happy that I was speechless and tearful, again includes a similar breathtaking view of a gorgeous city but in the company of a woman I held very close to my heart.
+Interestingly enough, the other time I can immediately recall being that happy, so happy that I was speechless and tearful, again includes a similar breathtaking view of a gorgeous city but this time in the company of a woman I held very close to my heart.
 
 Here is to all of you finding your happiness in 2013.
