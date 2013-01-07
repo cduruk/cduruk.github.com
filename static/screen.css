@@ -1,8 +1,8 @@
 /* Site Design */
 * {
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 ul, blockquote, body, p, h1, h2, h3 {
@@ -177,10 +177,12 @@ nav li:last-child {
   margin-bottom: 0;
 }
 
-.post .outro {
-	padding: 10px;
-	border: 1px solid #09f;
-	border-radius: 3px;
-	background: #e4f4ff;
-	margin-bottom: 15px;
+.post .outro, 
+.post .intro {
+
+  padding: 10px;
+  border: 1px solid #09f;
+  border-radius: 3px;
+  background: #e4f4ff;
+  margin-bottom: 15px;
 }
