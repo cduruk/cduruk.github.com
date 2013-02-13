@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2011-01-02 19:02:00 UTC
+date: 2010-11-04 19:02:00 UTC
 title: Visual vs. Interaction Design
 ---
 
