@@ -150,6 +150,12 @@ nav li:last-child {
   margin-bottom: 50px;
 }
 
+/*YouTube, most likely.*/
+.post iframe {
+  display: block;
+  margin: 20px auto;
+}
+
 .post time {
   display: block;
   font-family: 'TitilliumText22LThin', sans-serif;
