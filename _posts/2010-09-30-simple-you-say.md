@@ -14,11 +14,9 @@ However, simplicity takes a lot of work. I like to think of it as a computer gam
 
 That requires a lot of work. Just off the top of my head, for a simple web application with a single form, you might need to consider:
 
-How do you show errors to users; do you have a generic notification system or do you handle cases one by one? (Answer: Both. you should try to help users as much as you can but realize that they'll manage to break things in some way you can't think so have a fall-back)
-
-Is there any way you can recover from the error gracefully? This has a lot of implications as you might need to keep state across pages.
-
-If things fail miserably, what do you? How do you both notify the user that things have failed but also keep your cool, keep the user likely to keep using stuff.
+- How do you show errors to users; do you have a generic notification system or do you handle cases one by one? (Answer: Both. you should try to help users as much as you can but realize that they'll manage to break things in some way you can't think so have a fall-back)
+- Is there any way you can recover from the error gracefully? This has a lot of implications as you might need to keep state across pages.
+- If things fail miserably, what do you? How do you both notify the user that things have failed but also keep your cool, keep the user likely to keep using stuff.
 
 And really, this is tip of the iceberg.
 
