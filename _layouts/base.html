@@ -18,9 +18,11 @@
     <meta property="og:title" content="{{ page.title }}">
     <meta name="twitter:title" content="{{ page.title }}">
 
+    <!-- Sorry, Twitter.  -->
+    <meta name="twitter:description" content="{{ page.title }}">
+
     {% if page.description %}
       <meta name="description" content="{{ page.description }}">
-      <meta name="twitter:description" content="{{ page.description }}">
     {% endif %}
 
   {% else %}
