@@ -16,15 +16,11 @@ However, the point I am trying to make is that interaction design is a whole dif
 
 I do not know what makes a good interaction designer --and I still have moral qualms about using the term interaction designer--. However, I'll make a few relatively educated guesses:
 
-You need experience. This is a no-brainer. You just cannot learn this stuff in school (trust me, I tried). The challenges that you face when you actually create and support a product that are so weird, for the lack of a better term, compared to what your problems would be, that you'll try to design things better the next time round.
-
-You need education. This seems to counter the previous point but not really. I am not arguing that everyone needs to go to a HCI or design (I did but I was in the right place at the right time) but you need to know some hard facts to back up your intuitions. You need to know what an ideal line length is or if people care about below-the-fold. You can definitely make shit up as you design and probably convince yourself and people around you that your opinions are right but where's the fun in that?
-
-You need to iterate while designing. Again, a no-brainer, if you ask me. This stuff just takes time.
-
-You need to work on your target medium. This is me saying, in a fancy way, that you need to be able to build your designs. A lot of people disagree with this. I think the best analogy I can think for this is translations, although that fails to capture the full breadth of what I am trying to say. Translation implies that as more touch and tweak an artifact, the more it will lose some of its initial value, which is correct. However, the real value in building what you design is that you'll have a better feel for what works faster, which ties back to the previous point.
-
-You need to get out and look at how people use other things than just a computer. I know this sounds a bit pretentious but watching people operate physical things just reinforces the importance of things like affordances, gestures, how people make mistakes, why Fitt's law matters, what frustrates people.
+- You need experience. This is a no-brainer. You just cannot learn this stuff in school (trust me, I tried). The challenges that you face when you actually create and support a product that are so weird, for the lack of a better term, compared to what your problems would be, that you'll try to design things better the next time round.
+- You need education. This seems to counter the previous point but not really. I am not arguing that everyone needs to go to a HCI or design (I did but I was in the right place at the right time) but you need to know some hard facts to back up your intuitions. You need to know what an ideal line length is or if people care about below-the-fold. You can definitely make shit up as you design and probably convince yourself and people around you that your opinions are right but where's the fun in that?
+- You need to iterate while designing. Again, a no-brainer, if you ask me. This stuff just takes time.
+- You need to work on your target medium. This is me saying, in a fancy way, that you need to be able to build your designs. A lot of people disagree with this. I think the best analogy I can think for this is translations, although that fails to capture the full breadth of what I am trying to say. Translation implies that as more touch and tweak an artifact, the more it will lose some of its initial value, which is correct. However, the real value in building what you design is that you'll have a better feel for what works faster, which ties back to the previous point.
+- You need to get out and look at how people use other things than just a computer. I know this sounds a bit pretentious but watching people operate physical things just reinforces the importance of things like affordances, gestures, how people make mistakes, why Fitt's law matters, what frustrates people.
 
 Again, I'll reiterate: a great designer (or product designer, whatever term you want to use for yourself) will need to have both good visual design skills and good interaction design skills.
 
