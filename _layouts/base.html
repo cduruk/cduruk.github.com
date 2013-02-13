@@ -9,11 +9,20 @@
   <meta name="author" content="Can Duruk" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@can">
+  <meta name="twitter:creator" content="@can">
+  <meta name="twitter:url" content="http://{{ site.host }}{{ page.url }}/">
+
   {% if page.title %}
-  <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta name="twitter:title" content="{{ page.title }}">
+
     {% if page.description %}
       <meta name="description" content="{{ page.description }}">
+      <meta name="twitter:description" content="{{ page.description }}">
     {% endif %}
+
   {% else %}
     <meta name="description" content="Posts by Can Duruk">
   {% endif %}
