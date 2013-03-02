@@ -69,6 +69,9 @@ V4 was a different product than anything else out there and had it worked as we'
 I feel damn lucky I got to be part of a special company like Digg at a very special time.
 
 1: It was almost too right out of college. Before preparing my offer letter, they asked me when I was graduating and I put in May 16, as that was the day I was getting my diploma. And the start date on my offer letter turned out to be May 17. Due to the sheer excitement of getting a job at Digg, I didn't really notice that, until I was getting my plane tickets. I called up the office, told them that I really couldn't move across the country in a day. Fortunately, they were more than understanding --though they did push from the month I wanted to 2 weeks--.
+
 2: Digg V3 and V4 technically shared no code, they were entirely separate projects with V3 being all in PHP + MySQL and V4 being a brand-new PHP app running on Python (and very little Java) services on Cassandra and Redis. I did actually copy-paste 20 or so lines of advertising cookie from V3.
+
 3: In reality, had I been laid off, I had a feeling that they would go out of their way to make sure I wouldn't actually get kicked out of the country. One common theme among all the sensitive issues at Digg, the management always went out of their way to help the employees or even the former ones out.
+
 4: To give perspective, I had my laptop set up done in less than half a day and submitted a code for review before I left work that day. I was also really big fan of how our deployment worked. In general, shit ton of operational magic just worked.
