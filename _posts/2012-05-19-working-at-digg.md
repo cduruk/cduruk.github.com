@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2012-05-19 19:02:00 UTC
-title: URLs
+title: What was it like to work at Digg during Digg V4?
 ---
 
 _This is a Quora answer that I decided to move to my personal blog._
