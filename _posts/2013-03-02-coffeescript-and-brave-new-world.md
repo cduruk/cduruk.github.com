@@ -1,0 +1,266 @@
+---
+layout: post
+date: 2013-03-02 21:00:00 UTC
+title: CoffeeScript and Brave New World
+---
+
+I have to admit that the first time I heard about CoffeeScript, it sounded like a colossolly bad idea. While I was aware of JavaScript's quirks as well as another developer, trying to work around them by actually inventing a new language that compiled to "proper" JavaScript sounded like a crazy idea, or at least overkill. I didn't particularly have a strong opinion, per se, as it didn't seem to any of the big problems around JavaScript or web-development in general.
+
+So when I started a new job in which big parts of the front-end stack was written in CoffeeScript, I thought of it as a mostly as a good thing, not because I liked CoffeeScript but because I'd be learning a new tool. And after 5 intense months with CoffeeScript where we built some non-trivial applications; I think I formed some opionions of this new cool language, both about itself in and how it relates to its cousing JavaScript.
+
+## Debugging is *mostly* Easy
+
+CoffeeScript stays very true to its stated of goal; that is CoffeeScript is just Javascript. It is natural to think that the added level of indirection CoffeeScript adds would hamper debugging but in practice, this is rarely an issue.
+
+Sure, you do lose 1:1 mapping from CoffeeScript line to the JavaScript line when you see an exception or an error in your JavaScript, a lot of the time, the big issues in my code is rarely a syntactical issue but a logical one. And since you end up with a really clean and pretty-printed JavaScript most of the time with CoffeeScript, it's easy to pull out your regular debugging tools and go to town with them.
+
+There are, however, couple cases where CoffeeScript code differs from the generated JavaScript that you are somewhat exposed to the compilation layer. Let's take a look at couple examples.
+
+Consider this CoffeeScript code, where we use splats:
+
+{% highlight coffeescript %}
+  [foo, bar...] = baz
+{% endhighlight %}
+
+And now the generated JavaScript
+
+{% highlight javascript %}
+var bar, foo,
+  __slice = [].slice;
+
+foo = baz[0], bar = 2 <= baz.length ? __slice.call(baz, 1) : [];
+{% endhighlight %}
+
+While it is fairly clear, especially to a Ruby or a Perl programmer, how splats work and what you need to expect from the generated JavaScript code, I  find reading such JavaScript code slightly hard and sometimes troublesome when debugging with breakpoints.
+
+Another case where the generated JavaScript differs greatly from the JavaScript code is with closures; more specifically the `do` keyword in CoffeeScript which allows you to create a closure and immediately invoke it.
+
+So for this CoffeeScript code:
+
+{% highlight coffeescript %}
+do ($ = jQuery, window) ->  
+  $ ->  
+    alert 'Hello, world!'
+{% endhighlight %}
+
+You get this JavaScript:
+
+{% highlight javascript %}
+(function($, window) {
+  return $(function() {
+    return alert('Hello, world!');
+  });
+})(jQuery, window);
+{% endhighlight %}
+
+While this is a basic example, when this code is written in a function that yet returns another function, the added complexity of remembering both what the CoffeeScript code does and the JavaScript code does starts to build up.
+
+Take a look at this contrived example:
+
+{% highlight coffeescript %}
+foo = ({_arg}...) ->
+{% endhighlight %}
+
+And the JavaScript
+
+{% highlight javascript %}
+var foo,
+  __slice = [].slice;
+
+foo = function() {
+  var _arg, _arg1;
+  _arg1 = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+  _arg = _arg1._arg;
+};
+{% endhighlight %}
+
+Surely, this is an subjective matter but the fact that we have ended up with JavaScript function that seems to not have any arguments to one that *may* take arguments which *may* be objects is a bit too much for my liking; when I am debugging this JavaScript function, I need to go back to the CoffeeScript code to actually understand what the arguments are and how they are used since you can't understand anything from the method signature of JavaScript itself.
+
+## You write better JavaScript
+
+JavaScript is a quirky language with some issues; the two most glaring ones to me being all your variables being in global scope by default and using a functional scope instead of a block scope like most of the other languages. Morevoer, since it doesn't natively support any way of sharing code across files (although this is coming), especially in a browser environment, you end having to write both unnecessarily defensive code against name collisions under the `window` object.
+
+CoffeeScript solves both of those problems very elegantly; all your variables are declared with `var` automatically, meaning they aren't in the global `window` scope in the browser. Moreover, CoffeeScript automatically wraps all your code in a closure
+
+So when you write CoffeeScript like this:
+
+{% highlight coffeescript %}
+foo = 'Hello, world!'
+-> foo
+{% endhighlight %}
+
+It compiles to this JavaScript:
+
+{% highlight javascript %}
+// Generated by CoffeeScript 1.5.0
+(function() {
+  var foo;
+
+  foo = 'Hello, world!';
+
+  (function() {
+    return foo;
+  });
+
+}).call(this);
+{% endhighlight %}
+
+Overall, I believe that tools that enforce programmers to write code with less bugs without requiring any effort on the programmer's part a good thing and CoffeeScript fits that description pretty nicely. I simply wrote the logic of my program and CoffeeScript automatically made it *better*.
+
+## It is *mostly* JavaScript
+
+As I touched on before, CoffeeScript is mostly JavaScript and the beautiful syntax of it mostly melts away. On the other hand, the syntax does differ greatly enough from JavaScript it does require you to learn and understand it. 
+
+While this is not a big issue when you are the only person working on the codebase, when someone without prior CoffeeScript experience has to work with your code, or when you have to look at other people's CoffeeScript code, it does add some friction. And since CoffeeScript syntax is very terse and this terseness seems to be encourages in the community, somewhat past my comfort zone, it becomes an issue.
+
+For example, this is a pretty standard way to write a basic `setTimeout` in JavaScript:
+
+{% highlight javascript %}
+setTimeout(function(){
+  console.log('Hello, world!')
+}, 2000);
+{% endhighlight %}
+
+Something like this becomes surprisingly hard or at least not particularly clear in CoffeeScript as the community seems to be trying to optimize not for clarity of code but actually the minimum number of keystrokes, as if it is a metric that matters to anyone. Take a look this [StackOverflow question](http://stackoverflow.com/questions/6459630/how-to-write-settimeout-with-params-by-coffeescript) and the provided answers. While I believe this is mostly a faliure of documentation, it's still an issue that using CoffeeScript introduces
+
+Morevoer, as CoffeeScript does not have a formally defined grammer but is a product of the venerable Jeremy Ashkenas (and the contributors), you are bound to run into edge cases of the grammer where things seem to somehow work but to only break with a new version of the language.
+
+What would you expect to happen with this following CoffeeScript code:
+
+{% highlight coffeescript %}
+foo bar
+  baz: coo
+{% endhighlight %}
+
+Well, depends on the language of the CoffeeScript compiler you are using, turns out as the language is still being defined.
+  
+Currently, as I tested it with the 1.5.0 compiler, it compiles to the following JavaScript code:
+
+{% highlight javascript %}
+foo(bar)({
+  baz: coo
+});
+{% endhighlight %}
+
+Although, according to the language creator (and yours truly), it should more reasonably compile to:
+
+{% highlight javascript %}
+foo(bar({
+  baz: coo
+});
+{% endhighlight %}
+
+The difference subtle in character count but is huge in functionality. And if you think this is a contrived example, it's not. This is a regression (in some loosely defined terms) that was introduced in the 1.5.0 version of the compiler that broke many people's apps, as is obvious from [this Github issue](https://github.com/jashkenas/coffee-script/issues/2715).
+
+Of course, this would never happen to *you*, the responsible developer who tests every single of their front-end code and never updates any component without proper testing. Joking side, while this single update conveniently broke many people's Express apps in obvious ways, that's not a chance you can take with every single line of your code. In other words, while a minuscule possibility, it is possible to introduce a bug that would manifest itself in more subtle ways just because a new version of CoffeeScript decides to compile your uber-terse code in a different way now.
+
+## Back to the Future
+
+One other issue using a moving target to compile to yet another moving target, that is JavaScript, is that it's possible to get your moving parts out of order. As JavaScript is evolving from a language that was developed to add basic animations to the lingua franca of the web economy, it is adding (and hopefully removing) features left and right.
+
+Take a look at this CoffeeScript:
+
+{% highlight coffeescript %}
+for foo of bar
+  console.log foo
+{% endhighlight %}
+
+which compiles to this JavaScript loop.
+
+{% highlight javascript %}
+for (foo in bar) {
+  console.log(foo);
+}
+{% endhighlight %}
+
+Whereas this CoffeeScript:
+
+{% highlight coffeescript %}
+for foo in bar
+  console.log foo
+{% endhighlight %}
+
+Compiles to this JavaScript:
+
+{% highlight javascript %}
+for (_i = 0, _len = bar.length; _i < _len; _i++) {
+  foo = bar[_i];
+  console.log(foo);
+}
+{% endhighlight %}
+
+So, for those watching at home, you might realize that CoffeeScript has its own version of a `for ... of ...` loop that it translates to a `for ... in ...` loop in JavaScript, which presumably exists to make the well abused `for ... in ...` loop in JavaScript safer.
+
+Again, this is all great and is in line with the "make programs safe by default" argument. Unfortunately, this is an area where the fact that JavaScript that is a moving target itself is an issue. Turns out in the next planned version of ECMAScript, of which JavaScript is a dialect, there are some [new iterators](http://wiki.ecmascript.org/doku.php?id=harmony:iterators) and one of them is a `for ... of ...` struct.
+
+{% highlight javascript %}
+//proposed javascript syntax
+for (word of ["one", "two", "three"]) {
+    alert(word);
+}
+{% endhighlight %}
+
+So now, as a CoffeeScript developer, you have to both remember how your `for ... of ...` loops work as well as the same loops in JavaScript, if you want to use both optimally.
+
+Similarly, Harmony might also introduce a new `rest` syntax that is slightly similar to how CoffeeScript uses the `arguments` object to somewhat imitates it. As you might remember from an earlier example, CoffeeScript allows you to use variable number of positional arguments (as does JavaScript) but has a nice syntax over it.
+
+So this CoffeeScript:
+
+{% highlight coffeescript %}
+foo (args...) ->
+  console.log args[0]
+{% endhighlight %}
+
+Becomes this:
+
+{% highlight javascript %}
+var __slice = [].slice;
+
+foo(function() {
+  var args;
+  args = 1 <= arguments.length ? __slice.call(arguments, 0) : [];
+  return console.log(args[0]);
+});
+{% endhighlight %}
+
+Aside from the fact that I am personally not a fan of using `arguments` in JavaScript for any real purpose (and CoffeeScript encourages that by making it a reserved word), it's not clear to me how this CoffeeScript syntax will evolve with the propsed [rest arguments in Harmony](http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters).
+
+{% highlight javascript %}
+//proposed javascript syntax
+Function.prototype.curry = function(...args){
+  var self = this;
+  return function(...innerArgs){
+    return self.apply(this, args.concat(innerArgs);
+  }
+}
+{% endhighlight %}
+
+## That Whole Compilation Thing
+
+One of the greatest tenets of the web development is that there's essentially no compilation step; for the most part you can simply just change lines of code and refresh the page and voila, it's live. In fact, nowadays, it's not even uncommon to see web developers directly working in the browser as Chrome practically provides a relatively usable editor inside the browser, it even supports [changing your code in runtime](http://www.google.com/intl/cs-CZ/events/io/2010/sessions/chrome-developer-tools.html).
+
+So, with CoffeeScript, especially if you are developing a static site, you somehow have to introduce a bunch of new tools to get that "refresh-and-go" feeling you so like. Of course, this is all pretty easy for a developer worth its salt (I personally simply do a `watch` with a 1 second refresh) but that is of course just one piece of the puzzle.
+
+Things become complicated when you have to work with designers who may not be as comfortable with a build tools but still work on JavaScript. Now you have to both make sure not only he has all Node installed on his system but also make sure, as we discussed before, he always has the correct version of CoffeeScript too.
+
+And then there's the inevitable deployment process you have to think of. While any big JavaScript application worth its salt today has a robust build system, you still need to ensure that you have Node and the correct version of the CoffeeScript installed on your machines used for deployment or just throw your hands in the air and commit the cardinal sin of committing in compiled code.
+
+None of these are complex steps but they are steps nonetheless that you should take into account.
+
+## Should you use CoffeeScript?
+
+I admittedly mostly touched on the pain points of CoffeeScript and that is because most of the time, things *just work* and there is very little to think or write about. CoffeeScript is really a beautiful language with an almost adorable syntax that gets out of your way and works in expectedly pleasant ways with its destructing and optional parameters.
+
+Moreover, as I tried to emphasize, it does lead to better JavaScript, especially for a new-comer. And while the language is still partly in flux and there are issues coming up from the lack of structure, the issues are handled very fast.
+
+At this point, I also need to mention that just like any other community, CoffeeScript community mostly takes form of the personality of its creator, Jeremy Ashkenas. And you should relieved to know that Mr.Ashkenas simply is a true gentleman who cares about his craft as well as the people who use his tools.
+
+While software engineering might look like the ultimate objective industry where you can make every single decision rationally ("hey, we are dealing with zeros and ones and they are numbers and numbers are the cornerstones of objectivity!"), the truth is far from it.
+
+If you haven't, you should probably give CoffeeScript a spin. While the language seems a bit weird at first, with its reversed function syntax and terseness, the syntax definitely "melts away" and you end up with surprisingly small lines of code, especially compared to JavaScript. If, however, you are planning to use CoffeeScript on a big project with other developers, things are murkier, as you might be adding more complexity to your codebase than you'd think.
+
+In the end, the decision is yours. I'll leave it with three simple questions that you should ask yourself (and your co-workers) about using CoffeeScript on a big code base.
+
+* Are you more productive using it?
+* Does it lead to a more managable codebase?
+* Does it lead to a smaller number of bugs?
