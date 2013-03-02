@@ -152,7 +152,7 @@ foo(bar({
 
 The difference subtle in character count but is huge in functionality. And if you think this is a contrived example, it's not. This is a regression (in some loosely defined terms) that was introduced in the 1.5.0 version of the compiler that broke many people's apps, as is obvious from [this Github issue](https://github.com/jashkenas/coffee-script/issues/2715).
 
-Of course, this would never happen to *you*, the responsible developer who tests every single of their front-end code and never updates any component without proper testing. Joking side, while this single update conveniently broke many people's Express apps in obvious ways, that's not a chance you can take with every single line of your code. In other words, while a minuscule possibility, it is possible to introduce a bug that would manifest itself in more subtle ways just because a new version of CoffeeScript decides to compile your uber-terse code in a different way now.
+Of course, this would never happen to *you*, the responsible developer who tests every single of their front-end code and never updates any component without proper testing. Joking aside, while this single update conveniently broke many people's Express apps in obvious ways, that's not a chance you can take with every single line of your code. In other words, while a minuscule possibility, it is possible to introduce a bug that would manifest itself in more subtle ways just because a new version of CoffeeScript decides to compile your uber-terse code in a different way now.
 
 ## Back to the Future
 
@@ -223,7 +223,7 @@ foo(function() {
 });
 {% endhighlight %}
 
-Aside from the fact that I am personally not a fan of using `arguments` in JavaScript for any real purpose (and CoffeeScript encourages that by making it a reserved word), it's not clear to me how this CoffeeScript syntax will evolve with the propsed [rest arguments in Harmony](http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters).
+Aside from the fact that I am personally not a fan of using `arguments` in JavaScript for any real purpose (and CoffeeScript encourages that by making it a reserved word), it's not clear to me how this CoffeeScript syntax will evolve with the propsed [rest arguments in Harmony](http://wiki.ecmascript.org/doku.php?id=harmony:rest_parameters). While I suspect the solution might be simply allowing that syntax in CoffeeScript also, the greater issue of developers remembering two very similar syntaxes with very dissimilar effects still remain.
 
 {% highlight javascript %}
 //proposed javascript syntax
