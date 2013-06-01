@@ -59,6 +59,6 @@ While this sounds all great, by some generous interoperation of the word "great"
 
 <div class="outro">
   <p>
-    The source code for this article is availabe at this GitHub repository, to provide evidence of further edits and provide paper traiil. Any and all feedback is appreciated at <a href="mailto:can@duruk.net">can@duruk.net</a> and might very well ve appended to the end of article at the my personal discretion.
+    The source code for this article is availabe at <a href="https://github.com/cduruk/cduruk.github.com/blob/master/_posts/2013-07-01-turkish-protests-of-2013.md">this GitHub URL</a>, to provide evidence of further edits and provide paper traiil. Any and all feedback is appreciated at <a href="mailto:can@duruk.net">can@duruk.net</a> and might very well ve appended to the end of article at the my personal discretion.
   </p>
 </div>
