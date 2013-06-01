@@ -3,17 +3,10 @@ layout: post
 date: 2013-07-01 21:00:00 UTC
 title: Turkish Protests of May 2013 for the Uninitiated
 ---
-Couple of my friends on Facebook have been asking me about what has been happening in Turkey and decided to jot down a few words. But as I actually suck at summarizing anything, I ended up writing a several thousand words in a drunken haze, which is totally appropriate given some of the new bans on alcohol in Turkey.
-
-My knowledge of Turkish political history is severely limited to what I've learned through the years of reading the news (and is probably biased that way) and really not my area of expertise; if anything I am more interested in global politics and business than Turkish politics.
-
-Also, for those who are actually initiated to the Turkish political climate and figure out my background, you'll probably have your own reasons to think why I'm really biased and how I'm out of touch. Knock yourself out.
-
-_Here we go._
 
 AKP, the current ruling party, came into force 2002 following a disastrous market crash in 2001. While they were a newly formed party at the time, its founders have been politically active for years and have their roots in radical Islam.
 
-So while Turkish economy has made great strides between 2002 and now, AKP has essentially switched Turkey's course from being part of the modern western world to being the regional leader in the middle east and the Islamic world.
+While Turkish economy made great strides between 2002 and now, AKP has essentially switched Turkey's course from being part of the modern western world to being the regional leader in the middle east and the Islamic world.
 
 It's hard to describe the current situation without going too much into the past, but, in a nutshell, Republic of Turkey has been founded as an aggressively secular nation one of whose core principles was to "advance to the level of modern societies" where modern is really "western". I'm not very sure as to why those ideals didn't stick with the populace as a whole or how we unfortunately regressed; theories range from being modern, secular people just not being in our blood to religion being reintroduced to Turkish politics as a distraction from the looming threat of communism.
 
