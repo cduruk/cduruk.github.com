@@ -4,7 +4,7 @@ date: 2013-07-01 21:00:00 UTC
 title: Turkish Protests of May 2013 for the Uninitiated
 ---
 
-AKP, the current ruling party, came into force 2002 following a disastrous market crash in 2001. While they were a newly formed party at the time, its founders have been politically active for years and have their roots in radical Islam.
+AKP, the current ruling party, came into force 2002 following a disastrous market crash in 2001. While they were a newly formed party at the time, its founders have been politically active for years and have their roots in radical Islam; many of the founders of the party have come from previously banned political parties for threatening the secular order and the PM Recep Tayyip Erdogan himself has spent several months in jail for reciting a poem which was claimed to incite religious hatred.
 
 While Turkish economy made great strides between 2002 and now, AKP has essentially switched Turkey's course from being part of the modern western world to being the regional leader in the middle east and the Islamic world.
 
