@@ -1,12 +1,12 @@
 ---
 layout: post
-date: 2013-07-01 21:00:00 UTC
+date: 2013-06-01 21:00:00 UTC
 title: Turkish Protests of May 2013 for the Uninitiated
 ---
 
 AKP, the current ruling party, came into force 2002 following a disastrous market crash in 2001. While they were a newly formed party at the time, its founders have been politically active for years and have their roots in radical Islam; many of the founders of the party have come from previously banned political parties for threatening the secular order and the PM Recep Tayyip Erdogan himself has spent several months in jail for reciting a poem which was claimed to incite religious hatred.
 
-While Turkish economy made great strides between 2002 and now, AKP has essentially switched Turkey's course from being part of the modern western world to being the regional leader in the middle east and the Islamic world.
+While Turkish economy made great strides between 2002 and now, AKP has essentially switched Turkey's course from being part of the modern western world to being the regional leader in the middle east and the Islamic world while socially engineering a conservative, heavily Islamist society. While formidable goals on their own, unfortunately 
 
 It's hard to describe the current situation without going too much into the past, but, in a nutshell, Republic of Turkey has been founded as an aggressively secular nation one of whose core principles was to "advance to the level of modern societies" where modern is really "western". I'm not very sure as to why those ideals didn't stick with the populace as a whole or how we unfortunately regressed; theories range from being modern, secular people just not being in our blood to religion being reintroduced to Turkish politics as a distraction from the looming threat of communism.
 
