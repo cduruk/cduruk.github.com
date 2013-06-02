@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2013-07-01 21:00:00 UTC
+date: 2013-06-01 21:00:00 UTC
 title: Turkish Protests of May 2013 for the Uninitiated
 ---
 
