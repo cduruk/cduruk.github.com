@@ -14,9 +14,7 @@ As someone who has been interested in languages and accents, both personally and
 
 Before I came to U.S. in 2006, I attended a private American high school in Turkey where the primary language of instruction was English. During my time, I was heavily involved in the Model United Nations club, which meant that I had to be speaking English outside of school and I was lucky enough to give public speeches, in English, when I was 17, to thousands of people.
 
-When it was time for me to pick a college in the U.S., my choice of CMU was partly driven by the fact that it had a small Turkish community which would allow me to make more American and international friends, which I did. I'm assuming that since 2006, I have spoken and read more English than Turkish by orders of magnitude; most of my close friends in the U.S. are Americans and at this point, I find myself even slurring my speech in Turkish, speaking certain words with an English tonality.
-
-Moreover, I have actually studied cognitive science (not computer science!) during college, specializing in linguistics and have worked in 3 startups now, so this puts me in a special place to strategically aim stone, like no one else can get it out. But I kid.
+When it was time for me to pick a college in the U.S., my choice of CMU was partly driven by the fact that it had a small Turkish community which would allow me to make more American and international friends, which I did. I'm assuming that since 2006, I have spoken and read more English than Turkish by orders of magnitude; most of my close friends in the U.S. are Americans and at this point, I find myself even slurring my speech in Turkish, speaking certain words with an English tonality. Moreover, I have actually studied cognitive science (not computer science!) during college, specializing in linguistics, so this puts me in a special place to strategically aim stone, like no one else can get it out.
 
 Let's first look at what venerable Paul Graham actually said about accents, before making any judgements.
 
