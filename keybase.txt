@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/cduruk
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://duruk.net
+  * I am cduruk (https://keybase.io/cduruk) on keybase.
+  * I have a public key with fingerprint 757B 80B7 C7BE E441 E519  9DA4 D859 787C FA7C 1ACB
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "010151902acb09e69ed9a11a18864467adef8eb417da1840adc87d52b9cc725546ee0a",
+            "fingerprint": "757b80b7c7bee441e5199da4d859787cfa7c1acb",
+            "host": "keybase.io",
+            "key_id": "d859787cfa7c1acb",
+            "kid": "010151902acb09e69ed9a11a18864467adef8eb417da1840adc87d52b9cc725546ee0a",
+            "uid": "fb1154320a9c7538d448395fb2cda800",
+            "username": "cduruk"
+        },
+        "service": {
+            "hostname": "duruk.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1479517054,
+    "expire_in": 157680000,
+    "prev": "e534c77bb46e781255e864ec349efe9809a90f4e5ef67e0945c8f94e47fc39ff",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.58
+Comment: https://keybase.io/crypto
+
+yMIjAnicrVJbSBRRGN4tbcswL1FaRMJQEaF5ZvecPXO2C2kRSiQ9WJYV28yZf3Ta
+mllnZy0puz1E99ACiaAHi/ShB3vool2wCIsKVKKCSiiCQtSClCJD6ozYW489Hc7/
+f9/3f9/P/yh9si/Nj+bV9DUOnND8zx40JH2bCy8f2Cdptl4nRfZJMRh/YJcOCTca
+M3UpIiEZyURmKKhyDTEIM9CZKsuqrChhjMNU1cFQQMMy1UUNI1XnCtVJUGOc0yAh
+OAyAVClfMkyrCpy4Y1qukKWEagrSKKcaAMYyiBlMV7GuEEYVyg2VclmMFMRqO+Ex
+hDlNTcBS0xY18YmO2/sH/j/7To7LGZosExwKIpVxSkKKjrESYsTQglxXFYQ8YAIc
+S90NAs31pJOMSfX5kqjVmhy8tXo5Jvrj7aUWuIIWd2zX5vYuUa523XjEY7l1cQ+2
+B7TohEBUMy1dbFAQasFJmLYlRWSB5K7pKcqYMiJTRHC+BHvjpgNR00MQGhbmEPLG
+QK2QBBLCnFJNE/moIougIPYBPIQZGMAUxFSGDAwEjDAFxDDhisEwYGrwEDMMyYtU
+Y9lSJCRsqlVCMmFWWaqbdECqf9i5LcXnT/NNSZ3kXZYvbVrm33sbfhcYm3W97+rT
+kydnDJYvaHu5feOKs6M7v1UWv4cNm46MrWl7PP1eZtul7udFuGso+eFCSfGdskW4
+8FVGa/n9H1l5zR09FU2d68DJaHtbPP/Q8u9Tu+7K12f/Gj22tsDS6kpqclfbzad6
+G1Ob7+StXXV4fmks/XS2OX3oysDBowHScq7fyvhcFFNHegIzs1KfX9zx7syXuuGZ
+7Q1nu6Lt13KC60u/+qU9JwIV+Q1o9PXxrOEce9mSbZUjb7avZAt/9y5e4b/1c/9g
+Sg4f2k3mpre3Zozcft9fdrDwxoHq4k95N3P7W5xN2d2Vy82CrQ82bvme3dvysfPF
++S9nigpuZDY9mZMWCnTU9/0Bbdk8VA==
+=Ilim
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/cduruk
+
+==================================================================
