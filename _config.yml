@@ -4,6 +4,6 @@ server_port: 3000
 pygments: false
 permalink: /:title
 host: duruk.net
-markdown: rdiscount
+markdown: kramdown
 rdiscount:
   extensions: [smart]
