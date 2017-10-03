@@ -5,7 +5,7 @@ title: On Building a New World
 ---
 <div class="box" style="margin-bottom: 30px; background-color: #C7E7FA;">
 <p style="font-size: 20px;">
-I am currently moving the contents of this blog to a new site, called <a target="_blank" href="https://www.rambling.space">Rambling Space</a>. This piece is best viewed <a target="_blank" href="https://www.rambling.space/posts/on-building-a-new-world">on that site</a>.
+I am currently moving the contents of this blog to a new site, called <a target="_blank" href="https://ramblingspace.com/">Rambling Space</a>. This piece is best viewed <a target="_blank" href="https://ramblingspace.com/posts/on-building-a-new-world">on that site</a>.
   </p>
 </div>
 
