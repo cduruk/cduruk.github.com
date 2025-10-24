@@ -6,12 +6,27 @@ baseclass: home
 
 <div class="box">
   <p>
-    I am the co-founder and former CTO of <a href="https://felt.com">Felt</a>. Previously, I worked at <a href="https://uber.com">Uber</a> and a few other places. I live in New York.
+    This site has moved to <a href="https://justoffbyone.com">justoffbyone.com</a>
   </p>
   <p>
-    I write about technology on my blog <a href="https://justoffbyone.com">Off By One</a>.
+    You will be redirected in <span id="countdown">3</span> seconds...
   </p>
   <p>
-    Also sometimes stuff like <a href="https://www.nytimes.com/2018/09/28/opinion/instagram-facebook.html">this</a> or <a href="https://www.readmargins.com">that</a>.
+    If you are not redirected, <a href="https://justoffbyone.com">click here</a>.
   </p>
 </div>
+
+<script>
+  let seconds = 3;
+  const countdown = document.getElementById('countdown');
+
+  const timer = setInterval(() => {
+    seconds--;
+    countdown.textContent = seconds;
+
+    if (seconds <= 0) {
+      clearInterval(timer);
+      window.location.href = 'https://justoffbyone.com';
+    }
+  }, 1000);
+</script>
